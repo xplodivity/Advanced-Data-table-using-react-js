@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300;400;600&display=swap");
+
+body {
+  font-family: "Playpen Sans", cursive;
+  background-color: #2f2b2b;
+  color: #fff;
+}
+
+.App {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  gap: 10px;
+}
+
+.add-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.info-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+.add {
+  background-color: #73addf;
+  color: #fff;
+  font-weight: 600;
+}
+
+input[type="text"],
+button {
+  appearance: none;
+  outline: none;
+  border: 0;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-family: "Playpen Sans", cursive;
+}
+
+button {
+  font-weight: 600;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.edit {
+  background-color: #73addf;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.delete {
+  background-color: lightcoral;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.search-table-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.search-input {
+  width: 200px;
+}
+
+table {
+  font-family: "Playpen Sans", cursive;
+  border-collapse: collapse;
+}
+
+table td,
+table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  max-width: 350px;
+  word-wrap: break-word;
+  text-align: left;
+  color: #fff;
+}
+
+table td {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+table tr:hover {
+  background-color: #3f3c3c;
+}
+
+tr th {
+  min-width: 100px;
+}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+  font-weight: 600;
+}
+
+.pagination {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  tr th {
+    min-width: unset;
+  }
+
+  table td {
+    font-size: 14px;
+  }
+
+  .actions {
+    flex-wrap: wrap;
+    gap: 2px;
+  }
+
+  button {
+    margin: 3px 0;
+  }
+}
